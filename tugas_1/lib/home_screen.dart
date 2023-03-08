@@ -20,8 +20,9 @@ class HomeScreen extends StatelessWidget{
               ),
             ),
             Container(
-              padding: const EdgeInsets.fromLTRB(20, 100, 20, 0),
-              child: TextField(
+              padding: const EdgeInsets.fromLTRB(20, 120, 20, 0),
+              child: TextFormField(
+                keyboardType: TextInputType.phone,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(90.0),
@@ -32,11 +33,14 @@ class HomeScreen extends StatelessWidget{
             ),
             Container(
               padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
-              child: TextField(
+              child: TextFormField(
+                obscureText: true,
+                keyboardType: TextInputType.phone,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(90.0),
                   ),
+
                   labelText: 'Password',
                 ),
               ),
