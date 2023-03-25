@@ -25,7 +25,7 @@ class DetailPage extends StatelessWidget {
                 if (pokemon.isFavorite == false) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text('Berhasil Menambahkan ke Favorit'),
+                      content: Text('Successfuly adding to favourites'),
                       backgroundColor: Colors.black,
                     ),
                   );
@@ -33,7 +33,7 @@ class DetailPage extends StatelessWidget {
                 } else {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text('Berhasil Menghapus dari Favorit'),
+                      content: Text('Successfuly removing from favourites'),
                       backgroundColor: Colors.black,
                     ),
                   );
