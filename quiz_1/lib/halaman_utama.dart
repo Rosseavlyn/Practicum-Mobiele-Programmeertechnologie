@@ -13,10 +13,11 @@ class  HalamanUtama extends StatelessWidget {
         title: const Text ('Pokedex'),
         centerTitle: true,
       ),
+
       body: GridView.builder(
         itemCount: listPokemon.length,
          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: (Orientation == Orientation.portrait) ? 2 : 3),
+            crossAxisCount: (Orientation == Orientation.portrait) ? 2 : 2),
         itemBuilder: (context, index) {
           final PokemonData pokemon = listPokemon[index];
           return InkWell(
@@ -34,6 +35,7 @@ class  HalamanUtama extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Container(
+                    
                     width: MediaQuery.of(context).size.width / 5,
                     child: Image.network(pokemon.image),
                   ),

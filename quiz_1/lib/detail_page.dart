@@ -86,6 +86,7 @@ class DetailPage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
+            
              Expanded(
               child: ListView.builder(
                 itemCount: pokemon.type.length,
